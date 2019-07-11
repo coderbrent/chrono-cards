@@ -1,0 +1,22 @@
+[ 
+  {
+    "id": "1",
+    "name": "crazed-cage",
+    "img": "https://www.placecage.com/200/300"
+  },
+  {
+    "id": 2,
+    "name": "calm-cage",
+    "img": "https://www.placecage.com/150/150"
+  },
+  {
+    "id": "3",
+    "name": "what-cage",
+    "img": "http://www.placecage.com/c/200/300"
+  },
+  {
+    "id": "4",
+    "name": "derp-ass-cage",
+    "img": "http://www.placecage.com/gif/200/200"
+  }
+]
