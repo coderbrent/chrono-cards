@@ -1,9 +1,13 @@
 import React from 'react';
+import AppBar from '@material-ui/core/AppBar/AppBar';
 
-const Nav = props => {
-  return(
-    <div className="">
+class Nav extends React.Component {
+  render() {
     
-    </div>
-  );
+    return (
+      <AppBar />
+    );
+  }
 }
+
+export default Nav;

@@ -18,13 +18,17 @@ export default function SimpleCard(props) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.card}>
+    <Card 
+        className={classes.card}
+
+        >
       <CardContent>
           <CardMedia
           image={props.img}
           className={classes.media}
           />
       </CardContent>
+      
     </Card>
   );
 }
