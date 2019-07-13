@@ -1,23 +1,52 @@
 import React from 'react';
 import SimpleCard from './Components/Card';
-import cages from './Cages.json';
+import cards from './cards.json';
 import Grid from '@material-ui/core/Grid/Grid'
+import Button from '@material-ui/core/Button'
+import Container from '@material-ui/core/Container/Container'
 
 class App extends React.Component {
   state = {
     score: 0,
+    currentScore: 0,
+    display: "",
     highScore: 0,
     clicked: [],
     gameOver: false,
-    cages
+    cards
   };
 
-  shuffleCage = id => {
-    const clicked = [];
-    const sort = this.state.cages.sort(() => Math.random() - 0.5);
-    clicked.push(this.state.cages[0].id)
-    console.log(clicked.length)
-    this.setState({ cages: sort });
+  componentDidMount() {
+    this.setState({result: "Click a Card to begin!"})
+  }
+
+  resetGame() {
+    this.setState({
+      score: 0,
+      currentScore: 0,
+      display: "",
+      highScore: 5,
+      clicked: [],
+      gameOver: false,
+      cards
+    })
+  }
+
+  shuffleCard = id => {
+    const sort = this.state.cards.sort(() => Math.random() - 0.5);
+    this.state.clicked.push(id)
+    //console.log(this.state.clicked)
+    this.setState({ cards: sort });
+    if(!this.state.clicked.includes(id)) {
+      alert('got one!')
+      this.setState({ score: this.state.score + 1 })
+    } else if(this.state.score > this.state.highScore) {
+        this.setState({
+          highScore: this.state.score,
+          display: "Correct!"
+        })
+
+    }
     //push every clicked card into a 'clicked' array. On every following click
     //check to see if the current clicked matches anything in the 'clicked' array.
     //if it does, game over. if it doesn't keep going.
@@ -26,9 +55,10 @@ class App extends React.Component {
   render() {
     return (
       <>
-        {this.state.cages.map(Cage => ( 
-            <Grid item md={3}
-            onClick={() => this.shuffleCage(Cage.id)}
+      <Grid direction="row" >
+        {this.state.cards.map(Cage => ( 
+            <Grid direction="row" wrap="wrap" item lg={4}
+            onClick={() => this.shuffleCard(Cage.id)}
             >
               <SimpleCard
               shuffleCage = {this.shuffleCage}
@@ -39,8 +69,20 @@ class App extends React.Component {
               /> 
             </Grid>
             )
-          )};
+          )}
+          <Button 
+            name="reset" 
+            component="button" 
+            variant="outlined"
+            onClick={() => this.resetGame()}
+            >
+            Reset 
+          </Button>
+          <div>{this.state.display}</div>
+          <div>{this.state.score}</div>
+        </Grid>
       </>
+
     )
   } 
 }
