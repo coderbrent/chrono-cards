@@ -7,12 +7,13 @@ import CardMedia from '@material-ui/core/CardMedia/CardMedia'
 const useStyles = makeStyles({
   card: {
     width: 175,
-    height: 175,
-    margin: 5
+    height: 150,
+    margin: 3,
+
   },
   media: {
-    width: 150,
-    height: 150
+    height: 100,
+    maxWidth: 100
   }
 });
 

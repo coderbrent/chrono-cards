@@ -1,28 +1,28 @@
 [ 
   {
     "id": "1",
-    "name": "crazed-cage",
-    "img": "https://www.placecage.com/200/300"
+    "name": "golem",
+    "img": "http://www.videogamesprites.net/ChronoTrigger/Enemies/DarkAges/Golem2.gif"
   },
   {
     "id": "2",
-    "name": "calm-cage",
-    "img": "https://www.placecage.com/150/150"
+    "name": "cyrus",
+    "img": "http://www.videogamesprites.net/ChronoTrigger/Enemies/Present/Cyrus%20-%20Attack1%20(Front).gif"
   },
   {
     "id": "3",
-    "name": "what-cage",
-    "img": "http://www.placecage.com/c/200/300"
+    "name": "yakra",
+    "img": "http://www.videogamesprites.net/ChronoTrigger/Enemies/MiddleAges/Yakra1%20(Front).gif"
   },
   {
     "id": "4",
-    "name": "derp-ass-cage",
-    "img": "http://www.placecage.com/gif/200/200"
+    "name": "tubster",
+    "img": "http://www.videogamesprites.net/ChronoTrigger/Enemies/BlackOmen/Tubster%20(Front).gif"
   },
   {
     "id": "5",
-    "name": "derp-ass-cage",
-    "img": "http://www.placecage.com/g/200/200"
+    "name": "metal-mute",
+    "img": "http://www.videogamesprites.net/ChronoTrigger/Enemies/BlackOmen/Metal%20Mute1%20(Front).gif"
   },
   {
     "id": "6",
@@ -41,13 +41,13 @@
   },
   {
     "id": "9",
-    "name": "girl-robo",
-    "img": ""
+    "name": "lucca",
+    "img": "http://www.videogamesprites.net/ChronoTrigger/Party/Lucca/Lucca%20(Front).gif"
   },
   {
     "id": "10",
-    "name": "girl-robo",
-    "img": ""
+    "name": "gato",
+    "img": "http://www.videogamesprites.net/ChronoTrigger/Enemies/Present/Gato%20-%20Hit.gif"
   },
   {
     "id": "11",
@@ -56,18 +56,18 @@
   },
   {
     "id": "12",
-    "name": "girl-robo",
-    "img": ""
+    "name": "magus",
+    "img": "http://www.videogamesprites.net/ChronoTrigger/Party/Magus/Magus%20-%20Nod%20(Front).gif"
   },
   {
     "id": "13",
-    "name": "girl-robo",
-    "img": ""
+    "name": "ayla",
+    "img": "http://www.videogamesprites.net/ChronoTrigger/Party/Ayla/Ayla%20(Front).gif"
   },
   {
     "id": "14",
-    "name": "girl-robo",
-    "img": ""
+    "name": "robo",
+    "img": "http://www.videogamesprites.net/ChronoTrigger/Party/Robo/Robo%20(Front).gif"
   },
   {
     "id": "15",
