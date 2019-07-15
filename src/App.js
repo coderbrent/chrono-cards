@@ -5,6 +5,8 @@ import Grid from '@material-ui/core/Grid/Grid'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography/Typography'
 import Box from '@material-ui/core/Box'
+import Icon from '@material-ui/core/Icon/Icon'
+import { ReactIcon } from '@material-ui/core/SvgIcon'
 
 class App extends React.Component {
   state = {
@@ -98,6 +100,7 @@ class App extends React.Component {
             Reset 
           </Button>
           </Grid>
+          Built in <ReactIcon />
         </Grid>
       </>
     )
