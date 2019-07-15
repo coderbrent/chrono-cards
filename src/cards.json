@@ -31,7 +31,47 @@
   },
   {
     "id": "7",
+    "name": "marle",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcQmVRqrFQgHPdib8LogjmNsdQbkLuI1WcbP2kakmHt4bcrG2kIA"
+  },
+  {
+    "id": "8",
+    "name": "chrono",
+    "img": "http://www.videogamesprites.net/ChronoTrigger/Party/Crono/Crono%20(Front).gif"
+  },
+  {
+    "id": "9",
+    "name": "girl-robo",
+    "img": ""
+  },
+  {
+    "id": "10",
+    "name": "girl-robo",
+    "img": ""
+  },
+  {
+    "id": "11",
     "name": "girl-robo",
     "img": "http://mirrors.pdp-11.ru/_sprites/www.spriters-resource.com/resources/sheet_icons/16/16916.png"
+  },
+  {
+    "id": "12",
+    "name": "girl-robo",
+    "img": ""
+  },
+  {
+    "id": "13",
+    "name": "girl-robo",
+    "img": ""
+  },
+  {
+    "id": "14",
+    "name": "girl-robo",
+    "img": ""
+  },
+  {
+    "id": "15",
+    "name": "frog-flex",
+    "img": "https://steemitimages.com/640x0/http://rs19.pbsrc.com/albums/b153/KuzouKiriyama/Chrono%20Trigger/FrogVictory.gif~c200"
   }
 ]

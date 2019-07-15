@@ -6,10 +6,12 @@ import CardMedia from '@material-ui/core/CardMedia/CardMedia'
 
 const useStyles = makeStyles({
   card: {
-    maxWidth: 125,
-    margin: 15,
+    width: 175,
+    height: 175,
+    margin: 5
   },
   media: {
+    width: 150,
     height: 150
   }
 });
@@ -19,16 +21,14 @@ export default function SimpleCard(props) {
 
   return (
     <Card 
-        className={classes.card}
-
-        >
+      className={classes.card}
+      >
       <CardContent>
-          <CardMedia
-          image={props.img}
-          className={classes.media}
-          />
+        <CardMedia
+        image={props.img}
+        className={classes.media}
+        />
       </CardContent>
-      
     </Card>
   );
 }
