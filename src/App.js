@@ -4,6 +4,7 @@ import cards from './cards.json';
 import Grid from '@material-ui/core/Grid/Grid'
 import Button from '@material-ui/core/Button'
 import Container from '@material-ui/core/Container/Container'
+import Typography from '@material-ui/core/Typography/Typography'
 
 class App extends React.Component {
   state = {
@@ -55,21 +56,22 @@ class App extends React.Component {
   render() {
     return (
       <>
-      <Grid direction="row" >
+      <Grid container style={{ flexGrow: 1, }}>
+        <Grid item md={12} style={{ padding: 20, backgroundColor: "indigo" }}>
         {this.state.cards.map(Cage => ( 
-            <Grid direction="row" wrap="wrap" item lg={4}
-            onClick={() => this.shuffleCard(Cage.id)}
-            >
               <SimpleCard
+              onClick={() => this.shuffleCard(Cage.id)}
               shuffleCage = {this.shuffleCage}
               id={Cage.id}
               key={Cage.id}
               name={Cage.name}
               img={Cage.img} 
-              /> 
-            </Grid>
+              />
             )
           )}
+        </Grid>
+      </Grid>
+
           <Button 
             name="reset" 
             component="button" 
@@ -80,7 +82,7 @@ class App extends React.Component {
           </Button>
           <div>{this.state.display}</div>
           <div>{this.state.score}</div>
-        </Grid>
+
       </>
 
     )
